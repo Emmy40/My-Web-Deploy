@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interactive Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="logo">SimpleWeb</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero" id="home">
+            <h1>Welcome to SimpleWeb</h1>
+            <p>A beautiful, interactive website built with HTML, CSS, and JavaScript</p>
+            <button class="btn" onclick="showMessage()">Get Started</button>
+        </section>
+
+        <section class="features" id="features">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Fast & Modern</h3>
+                <p>Built with modern web technologies for optimal performance and user experience.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Looks great on all devices - desktop, tablet, and mobile.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Interactive Elements</h3>
+                <p>Engaging animations and interactive components for better user engagement.</p>
+            </div>
+        </section>
+
+        <section class="counter">
+            <h2>Interactive Counter</h2>
+            <div class="counter-display" id="counterDisplay">0</div>
+            <div class="counter-controls">
+                <button onclick="decrementCounter()">-</button>
+                <button onclick="resetCounter()">Reset</button>
+                <button onclick="incrementCounter()">+</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SimpleWeb. Made with ❤️ using HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
